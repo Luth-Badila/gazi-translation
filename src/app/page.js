@@ -29,7 +29,7 @@ export default function Home() {
   ];
   return (
     <main>
-      <section className="h-screen bg-hero">
+      <section className="lg:h-screen h-[80vh] bg-hero">
         <Navbar />
         <HomePage />
       </section>

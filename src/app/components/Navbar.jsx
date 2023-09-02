@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/logo3.png";
 
 export default function Navbar() {
   return (
-    <nav className="container flex justify-between">
-      <Image src={Logo} alt="Logo" width={200} />
-      <div className="flex py-10 gap-4 text-xl text-[#DAA520]">
+    <nav className="flex p-7 justify-between">
+      <Image src={Logo} alt="Logo" className="w-[80px] h-[50px]" />
+      <div className="flex gap-4 text-xl text-[#DAA520]">
         <p>Home</p>
         <p>About</p>
         <p>Contact</p>

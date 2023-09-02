@@ -1,8 +1,8 @@
 export default function HomePage() {
   return (
-    <div className="mx-auto text-center container text-[#DAA520]">
-      <h1 className="text-[8rem]">Gazi Translation</h1>
-      <p className="capitalize text-[2rem]">
+    <div className="flex flex-col lg:h-[70vh] h-[50vh] justify-center items-center text-[#DAA520]">
+      <h1 className="lg:text-[8rem] text-[3rem] text-center">Gazi Translation</h1>
+      <p className="capitalize lg:text-[2rem] text-[1rem]">
         solusi bagi anda yang membutuhkan
         <br /> translation, proofread dan editing
       </p>
