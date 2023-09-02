@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 export default function Card({ caption, title, icon }) {
   return (
     <>
-      <div id="about" className="group">
+      <div className="group">
         <div className="relative grid w-full lg:h-[20vh] h-[25vh] flex-col items-start justify-start overflow-hidden rounded-xl bg-white px-2">
           <div className="absolute inset-0 m-0 h-full full overflow-hidden rounded-none  shadow-none">
             <div className="flex flex-col justify-center items-center lg:mt-0 mt-[30px]">

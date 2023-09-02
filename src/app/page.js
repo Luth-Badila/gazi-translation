@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import Gallery from "./components/Gallery";
 import Card from "./components/Card";
+import Accordion from "./components/Accordion";
+import TabMenu from "./components/TabMenu";
 
 export default function Home() {
   const items = [
@@ -27,6 +29,34 @@ export default function Home() {
       icon: "ant-design:translation-outlined",
     },
   ];
+  const accordionData = [
+    {
+      title: "Accordion Item 1",
+      content: "Content for item 1 goes here.",
+    },
+    {
+      title: "Accordion Item 2",
+      content: "Content for item 2 goes here.",
+    },
+  ];
+  const tabs = [
+    {
+      label: "Tab 1",
+      content: <p>This is the content of Tab 1.</p>,
+    },
+    {
+      label: "Tab 2",
+      content: <p>This is the content of Tab 2.</p>,
+    },
+    {
+      label: "Tab 3",
+      content: (
+        <div>
+          <p>This is the content of Tab 3</p>
+        </div>
+      ),
+    },
+  ];
   return (
     <main>
       <section className="lg:h-screen h-[80vh] bg-hero">
@@ -42,6 +72,22 @@ export default function Home() {
               return <Card key={index} caption={caption} image={image} instagramUrl={instagramUrl} title={title} icon={icon} />;
             })}
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="about" className="container mx-auto p-4">
+          <h1 className="text-3xl font-semibold mb-4 text-center">Tentang Kami</h1>
+          {accordionData.map((item, index) => (
+            <Accordion key={index} title={item.title} content={item.content} />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="container mx-auto p-4">
+          <h1 className="text-3xl font-semibold mb-4">Tab Menu Example</h1>
+          <TabMenu tabs={tabs} />
         </div>
       </section>
 
