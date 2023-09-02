@@ -1,7 +1,7 @@
 "use client";
 // Components/Gallery.js
 import React, { useState } from "react";
-import { AiOutlineExpandAlt } from "react-icons/ai";
+import { Icon } from "@iconify/react";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
@@ -18,7 +18,7 @@ function Gallery() {
       title: "Beautiful Work",
     },
     {
-      imageUrl: "https://themewagon.github.io/snapshot/images/model-2.jpg",
+      imageUrl: "https://themewagon.github.io/snapshot/images/model-8.jpg",
       type: "Nature",
       title: "Beautiful Work",
     },
@@ -74,7 +74,7 @@ function Gallery() {
                     }}
                   >
                     <p className="text-white">
-                      <AiOutlineExpandAlt className="text-5xl border w-16 h-16 bg-neutral-500 hover:bg-white hover:text-black p-3 cursor-pointer rounded-full" />
+                      <Icon icon="lucide:expand" className="text-5xl border w-16 h-16 bg-neutral-500 hover:bg-white hover:text-black p-3 cursor-pointer rounded-full" />
                     </p>
                   </div>
                 </div>

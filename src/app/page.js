@@ -10,18 +10,21 @@ export default function Home() {
       name: "beautiful image",
       instagramUrl: "instagram url here",
       title: "Translation",
+      icon: "bx:edit",
     },
     {
       image: "https://images.pexels.com/photos/17640285/pexels-photo-17640285/free-photo-of-lumineux-mode-gens-femme.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       name: "nature image",
       instagramUrl: "instagram url here",
       title: "Proofread",
+      icon: "ph:read-cv-logo-bold",
     },
     {
       image: "https://images.pexels.com/photos/17640285/pexels-photo-17640285/free-photo-of-lumineux-mode-gens-femme.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       name: "nature image",
       instagramUrl: "instagram url here",
       title: "Editing",
+      icon: "ant-design:translation-outlined",
     },
   ];
   return (
@@ -35,18 +38,18 @@ export default function Home() {
         <div className="px-2 mx-auto flex justify-center flex-col gap-3 my-16">
           <h1 className="uppercase text-center text-4xl text-[#DAA520] text-semibold">Jasa Layanan Kami</h1>
           <div className="container mx-auto grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-            {items.map(({ name, image, instagramUrl, title }, index) => {
-              return <Card key={index} name={name} image={image} instagramUrl={instagramUrl} title={title} />;
+            {items.map(({ name, image, instagramUrl, title, icon }, index) => {
+              return <Card key={index} name={name} image={image} instagramUrl={instagramUrl} title={title} icon={icon} />;
             })}
           </div>
         </div>
       </section>
 
-      {/* <section>
+      <section>
         <div className="w-full">
           <Gallery />
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
