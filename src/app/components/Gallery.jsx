@@ -11,7 +11,6 @@ function Gallery() {
   const [image, setImage] = useState("");
 
   const galleryTab = [
-    // you can add more image if you want
     {
       imageUrl: "https://themewagon.github.io/snapshot/images/model-1.jpg",
       type: "Nature",

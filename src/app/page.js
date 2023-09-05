@@ -1,42 +1,42 @@
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
-import Gallery from "./components/Gallery";
 import Card from "./components/Card";
 import Accordion from "./components/Accordion";
 import TabMenu from "./components/TabMenu";
+import WaIcon from "./components/WaIcon";
 
 export default function Home() {
   const items = [
     {
       image: "https://images.pexels.com/photos/17588450/pexels-photo-17588450/free-photo-of-noir-et-blanc-mode-homme-gens.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-      caption: "Kami membantu anda untuk menerjemahkan teks baik untuk tugas sekolah, kuliah, penelitian maupun pekerjaan anda",
+      caption: "Terjemah naskah non-akademik seperti buku manual petunjuk, artikel website, business plan / executive summary, naskah pidato, motivation letter, study plan, buku-buku, project proposal, dan naskah umum lainnya.",
       instagramUrl: "instagram url here",
       title: "Translation",
-      icon: "bx:edit",
+      icon: "simple-line-icons:book-open",
     },
     {
       image: "https://images.pexels.com/photos/17640285/pexels-photo-17640285/free-photo-of-lumineux-mode-gens-femme.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-      caption: "Kami membantu anda mengkoreksi tulisan anda agar tidak ada typo dan sesuai dengan EYD ata Grammar",
+      caption: "Menerjemahkan textbook, manuskrip untuk jurnal ilmiah / conference proceeding, research proposal dsb.",
       instagramUrl: "instagram url here",
       title: "Proofread",
-      icon: "ph:read-cv-logo-bold",
+      icon: "ps:book",
     },
     {
       image: "https://images.pexels.com/photos/17640285/pexels-photo-17640285/free-photo-of-lumineux-mode-gens-femme.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-      caption: "Kami membantu anda merubah tulisan agar sesuai dengan EYD atau Grammar",
+      caption: "Koreksi (proofreading) dan penyempurnaan naskah berbahasa inggris, meliputi grammar & spelling checking, phrase & collocation, content's logic & flow, dan reference's consistency & completeness.",
       instagramUrl: "instagram url here",
       title: "Editing",
-      icon: "ant-design:translation-outlined",
+      icon: "iconoir:page-edit",
     },
   ];
   const accordionData = [
     {
-      title: "Accordion Item 1",
-      content: "Content for item 1 goes here.",
+      title: "What types of files do you support ?",
+      content: "We support commonly used text formats (DOC, PDF, TXT) and deliver our customers' files in the original format after translation. Please contact our Support team for more details.",
     },
     {
-      title: "Accordion Item 2",
-      content: "Content for item 2 goes here.",
+      title: "Bagaimana saya bisa menghubungi penerjemah ?",
+      content: "Kamu bisa menulis catatan kepada penerjemah sebelum proses terjemahan dilakukan atau hubungi langsung tim  kami",
     },
   ];
   const tabs = [
@@ -58,18 +58,18 @@ export default function Home() {
     },
   ];
   return (
-    <main>
+    <main className="bg-black text-white">
       <section className="lg:h-screen h-[80vh] bg-hero">
         <Navbar />
         <HomePage />
       </section>
 
       <section>
-        <div className="px-2 mx-auto flex justify-center flex-col gap-3 my-16">
+        <div className="px-2 mx-auto flex justify-center flex-col gap-5 my-16">
           <h1 className="uppercase text-center text-4xl text-[#DAA520] text-semibold">Jasa Layanan Kami</h1>
           <div className="container mx-auto grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-            {items.map(({ caption, image, instagramUrl, title, icon }, index) => {
-              return <Card key={index} caption={caption} image={image} instagramUrl={instagramUrl} title={title} icon={icon} />;
+            {items.map(({ caption, title, icon }, index) => {
+              return <Card key={index} caption={caption} title={title} icon={icon} />;
             })}
           </div>
         </div>
@@ -92,9 +92,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="w-full">
-          <Gallery />
-        </div>
+        <WaIcon />
       </section>
     </main>
   );

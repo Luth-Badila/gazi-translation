@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 export default function HomePage() {
   return (
@@ -7,9 +9,6 @@ export default function HomePage() {
         solusi bagi anda yang membutuhkan
         <br /> translation, proofread dan editing
       </p>
-      <button className="mt-3 rounded-lg text-xl bg-white text-[#DAA520] p-4">
-        <Link href="">Hubungi Kami</Link>
-      </button>
     </div>
   );
 }
