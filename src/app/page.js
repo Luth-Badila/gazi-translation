@@ -4,6 +4,9 @@ import Card from "./components/Card";
 import Accordion from "./components/Accordion";
 import TabMenu from "./components/TabMenu";
 import WaIcon from "./components/WaIcon";
+import Wave from "./components/Wave";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
 
 export default function Home() {
   const items = [
@@ -93,6 +96,20 @@ export default function Home() {
 
       <section>
         <WaIcon />
+      </section>
+
+      <section>
+        <div className="container mx-auto p-4">
+          <Form />
+        </div>
+      </section>
+
+      {/* <section>
+        <Wave />
+      </section> */}
+
+      <section>
+        <Footer />
       </section>
     </main>
   );
