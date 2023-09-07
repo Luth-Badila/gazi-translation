@@ -44,8 +44,8 @@ export default function Footer() {
             <div className="bg-black w-[100px] p-3 rounded-md">
               <Image src={Logo} alt="Logo Gazi" />
             </div>
-            <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">Copyright © 2023 Gazi Translation</p>
-            <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">All rights reserved</p>
+            <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">Hak Cipta © 2023 Gazi Translation</p>
+            <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">Hak Cipta Dilindungi Undang-Undang</p>
             {/* <div className="flex items-center gap-x-4 mt-12">
               <button
                 aria-label="instagram"
