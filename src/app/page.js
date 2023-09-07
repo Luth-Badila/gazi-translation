@@ -34,8 +34,22 @@ export default function Home() {
   ];
   const accordionData = [
     {
-      title: "What types of files do you support ?",
-      content: "We support commonly used text formats (DOC, PDF, TXT) and deliver our customers' files in the original format after translation. Please contact our Support team for more details.",
+      title: "Berapa harga jasa kami ?",
+      content: (
+        <div className="flex lg:flex-row flex-col gap-5">
+          <div>
+            <h1>Abstrak</h1>
+            <p>Instan 24 jam - 45.000</p>
+            <p>Reguler 3 hari - 40.000</p>
+            <p>Standart 7 hari - 35.000</p>
+          </div>
+          <div>
+            <h1>Jurnal Lokal</h1>
+            <p>Instan 24 jam - 55.000 (standar dosen)</p>
+            <p>Reguler 3 hari - 45.000</p>
+          </div>
+        </div>
+      ),
     },
     {
       title: "Bagaimana saya bisa menghubungi penerjemah ?",
@@ -44,12 +58,18 @@ export default function Home() {
   ];
   const tabs = [
     {
-      label: "Tab 1",
-      content: <p>This is the content of Tab 1.</p>,
+      label: "Abstrak",
+      content: <p>Instan - Rp 40.000</p>,
     },
     {
-      label: "Tab 2",
-      content: <p>This is the content of Tab 2.</p>,
+      label: "Artikel Kuliah (dari skripsi)",
+      content: (
+        <div>
+          <p>Instan 24 jam - Rp 45.000</p>
+          <p>Reguler 3 hari - Rp 40.000</p>
+          <p>Standar 7 hari - Rp 35.000</p>
+        </div>
+      ),
     },
     {
       label: "Tab 3",
@@ -89,7 +109,7 @@ export default function Home() {
 
       <section>
         <div className="container mx-auto p-4">
-          <h1 className="text-3xl font-semibold mb-4">Tab Menu Example</h1>
+          <h1 className="text-3xl font-semibold mb-4">Berapa harga jasa kami ?</h1>
           <TabMenu tabs={tabs} />
         </div>
       </section>

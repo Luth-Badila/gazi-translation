@@ -38,18 +38,18 @@ export default function Footer() {
     //   </div>
     // </footer>
     <footer className="bg-[#daa520]">
-      <div class="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4">
-        <div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
-          <div class="flex flex-col flex-shrink-0">
-            <div class="bg-black w-[100px] p-3 rounded-md">
+      <div className="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
+          <div className="flex flex-col flex-shrink-0">
+            <div className="bg-black w-[100px] p-3 rounded-md">
               <Image src={Logo} alt="Logo Gazi" />
             </div>
-            <p class="text-sm leading-none text-gray-800 mt-4 dark:text-white">Copyright © 2023 Gazi Translation</p>
-            <p class="text-sm leading-none text-gray-800 mt-4 dark:text-white">All rights reserved</p>
-            {/* <div class="flex items-center gap-x-4 mt-12">
+            <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">Copyright © 2023 Gazi Translation</p>
+            <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">All rights reserved</p>
+            {/* <div className="flex items-center gap-x-4 mt-12">
               <button
                 aria-label="instagram"
-                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
+                className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
               >
                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -62,7 +62,7 @@ export default function Footer() {
               </button>
               <button
                 aria-label="linked-in"
-                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
+                className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
               >
                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -75,7 +75,7 @@ export default function Footer() {
               </button>
               <button
                 aria-label="twitter"
-                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
+                className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
               >
                 <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -88,7 +88,7 @@ export default function Footer() {
               </button>
               <button
                 aria-label="youtube"
-                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
+                className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center"
               >
                 <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -101,53 +101,53 @@ export default function Footer() {
               </button>
             </div> */}
           </div>
-          <div class="flex flex-col">
-            <h2 class="text-base font-semibold leading-4 text-black dark:text-white">Company</h2>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline text-black hover:text-gray-500 text-base leading-4 mt-6 dark:text-white cursor-pointer">
+          {/* <div className="flex flex-col">
+            <h2 className="text-base font-semibold leading-4 text-black dark:text-white">Company</h2>
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline text-black hover:text-gray-500 text-base leading-4 mt-6 dark:text-white cursor-pointer">
               Blog
             </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Pricing
             </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               About Us
             </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Contact us
             </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Testimonials
             </Link>
-          </div>
-          <div class="flex flex-col">
-            <h2 class="text-base font-semibold leading-4 text-black dark:text-white">Support</h2>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
-              Legal policy
+          </div> */}
+          <div className="flex flex-col">
+            <h2 className="text-base font-semibold leading-4 text-black dark:text-white">Pendukung</h2>
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+              Kebijakan Hukum
             </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            {/* <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Status policy
+            </Link> */}
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+              Kebijakan Privasi
             </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
-              Privacy policy
-            </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
-              Terms of service
+            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+              Syarat & Ketentuan
             </Link>
           </div>
-          <div class="flex flex-col">
-            <h2 class="text-base font-semibold leading-4 text-black dark:text-white">Contact</h2>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
-              WA : 9890480483
-            </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
-              Status policy
-            </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
-              Privacy policy
-            </Link>
-            <Link href="javascript:void(0)" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
-              Terms of service
-            </Link>
+          <div className="flex flex-col">
+            <h2 className="text-base font-semibold leading-4 text-black dark:text-white">Kontak</h2>
+            <div className="flex gap-3 items-center mt-6">
+              <p className="text-black dark:text-white">WA :</p>
+              <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 text-black dark:text-white cursor-pointer">
+                9890480483
+              </Link>
+            </div>
+            <div className="flex gap-3 items-center mt-6">
+              <p className="text-black dark:text-white">Email :</p>
+              <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 text-black dark:text-white cursor-pointer">
+                GaziTranslation@gmail.com
+              </Link>
+            </div>
           </div>
         </div>
       </div>

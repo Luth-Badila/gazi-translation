@@ -17,7 +17,9 @@ const TabMenu = ({ tabs }) => {
           </button>
         ))}
       </div>
-      <div className="mt-4">{tabs[activeTab].content}</div>
+      <div className="bg-[#daa520]">
+        <div className="p-3">{tabs[activeTab].content}</div>
+      </div>
     </div>
   );
 };
