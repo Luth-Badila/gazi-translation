@@ -1,12 +1,15 @@
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import Card from "./components/Card";
-import Accordion from "./components/Accordion";
+import Accordion from "./components/Accordion/Accordion";
 import TabMenu from "./components/TabMenu";
 import WaIcon from "./components/WaIcon";
 import Wave from "./components/Wave";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
+import Content1 from "./components/Accordion/content1";
+import Content2 from "./components/Accordion/content2";
+import FormTrying from "./components/FormTrying";
 
 export default function Home() {
   const items = [
@@ -34,26 +37,12 @@ export default function Home() {
   ];
   const accordionData = [
     {
-      title: "Berapa harga jasa kami ?",
-      content: (
-        <div className="flex lg:flex-row flex-col gap-5">
-          <div>
-            <h1>Abstrak</h1>
-            <p>Instan 24 jam - 45.000</p>
-            <p>Reguler 3 hari - 40.000</p>
-            <p>Standart 7 hari - 35.000</p>
-          </div>
-          <div>
-            <h1>Jurnal Lokal</h1>
-            <p>Instan 24 jam - 55.000 (standar dosen)</p>
-            <p>Reguler 3 hari - 45.000</p>
-          </div>
-        </div>
-      ),
+      title: "Bagaimana saya bisa menghubungi penerjemah ?",
+      content: <Content2 />,
     },
     {
-      title: "Bagaimana saya bisa menghubungi penerjemah ?",
-      content: "Kamu bisa menulis catatan kepada penerjemah sebelum proses terjemahan dilakukan atau hubungi langsung tim  kami",
+      title: "Berapa harga jasa kami ?",
+      content: <Content1 />,
     },
   ];
   const tabs = [
@@ -107,16 +96,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="container mx-auto p-4">
           <h1 className="text-3xl font-semibold mb-4">Berapa harga jasa kami ?</h1>
           <TabMenu tabs={tabs} />
         </div>
-      </section>
+      </section> */}
 
       <section>
         <WaIcon />
       </section>
+
+      {/* <section>
+        <div className="container mx-auto p-4">
+          <FormTrying />
+        </div>
+      </section> */}
 
       <section>
         <div className="container mx-auto p-4">

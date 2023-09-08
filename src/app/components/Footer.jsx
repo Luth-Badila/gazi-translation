@@ -103,34 +103,34 @@ export default function Footer() {
           </div>
           {/* <div className="flex flex-col">
             <h2 className="text-base font-semibold leading-4 text-black dark:text-white">Company</h2>
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline text-black hover:text-gray-500 text-base leading-4 mt-6 dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline text-black hover:text-gray-500 text-base leading-4 mt-6 dark:text-white cursor-pointer">
               Blog
             </Link>
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Pricing
             </Link>
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               About Us
             </Link>
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Contact us
             </Link>
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Testimonials
             </Link>
           </div> */}
           <div className="flex flex-col">
             <h2 className="text-base font-semibold leading-4 text-black dark:text-white">Pendukung</h2>
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Kebijakan Hukum
             </Link>
-            {/* <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            {/* <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Status policy
             </Link> */}
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Kebijakan Privasi
             </Link>
-            <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
+            <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-black dark:text-white cursor-pointer">
               Syarat & Ketentuan
             </Link>
           </div>
@@ -138,13 +138,13 @@ export default function Footer() {
             <h2 className="text-base font-semibold leading-4 text-black dark:text-white">Kontak</h2>
             <div className="flex gap-3 items-center mt-6">
               <p className="text-black dark:text-white">WA :</p>
-              <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 text-black dark:text-white cursor-pointer">
+              <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 text-black dark:text-white cursor-pointer">
                 9890480483
               </Link>
             </div>
             <div className="flex gap-3 items-center mt-6">
               <p className="text-black dark:text-white">Email :</p>
-              <Link href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 text-black dark:text-white cursor-pointer">
+              <Link href="" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 text-black dark:text-white cursor-pointer">
                 GaziTranslation@gmail.com
               </Link>
             </div>
