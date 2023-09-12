@@ -37,24 +37,26 @@ export default function Home() {
   ];
   const accordionData = [
     {
-      title: "Title content here",
+      title: "Bagaimana saya bisa menghubungi penerjemah ?",
       content: <Content2 />,
     },
     {
-      title: "Title content here",
+      title: "Berapa harga jasa kami ?",
       content: <Content1 />,
     },
   ];
   const tabs = [
     {
-      label: "Title content here",
-      content: <p>Content here</p>,
+      label: "Abstrak",
+      content: <p>Instan - Rp 40.000</p>,
     },
     {
-      label: "Title content here",
+      label: "Artikel Kuliah (dari skripsi)",
       content: (
         <div>
-          <p>Content here</p>
+          <p>Instan 24 jam - Rp 45.000</p>
+          <p>Reguler 3 hari - Rp 40.000</p>
+          <p>Standar 7 hari - Rp 35.000</p>
         </div>
       ),
     },
