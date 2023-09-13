@@ -48,27 +48,37 @@ export default function Form() {
         <label htmlFor="email">Email:</label>
         <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none" required />
 
-        <label htmlFor="phone">Nomor WA:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
-          className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none"
-          required
-        ></input>
-        <p>Format: 1234-5678-9999</p>
+        <div className="grid gap-6 mb-6 md:grid-cols-2">
+          <div>
+            <label htmlFor="phone">Nomor WA:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+              className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none"
+              required
+            ></input>
+            <p>Format: 1234-5678-9999</p>
+          </div>
+          <div>
+            <label htmlFor="institution">Asal institusi:</label>
+            <input type="text" id="institution" value={institution} onChange={(e) => setInstitution(e.target.value)} className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none" required />
+          </div>
+        </div>
+        <div className="grid gap-6 mb-6 md:grid-cols-2">
+          <div>
+            <label htmlFor="information">Dapat informasi Gazi dari mana ?:</label>
+            <input type="text" id="information" value={information} onChange={(e) => setInformation(e.target.value)} className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none" required />
+          </div>
 
-        <label htmlFor="institution">Asal institusi:</label>
-        <input type="text" id="institution" value={institution} onChange={(e) => setInstitution(e.target.value)} className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none" required />
-
-        <label htmlFor="information">Dapat informasi Gazi dari mana ?:</label>
-        <input type="text" id="information" value={information} onChange={(e) => setInformation(e.target.value)} className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none" required />
-
-        <label htmlFor="service">Pilihan Jasa:</label>
-        <input type="text" id="service" value={service} onChange={(e) => setService(e.target.value)} className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none" required />
+          <div>
+            <label htmlFor="service">Pilihan Jasa:</label>
+            <input type="text" id="service" value={service} onChange={(e) => setService(e.target.value)} className="py-2 px-0 w-full text-md text-white bg-black border-b-2 border-[#daa520] outline-none" required />
+          </div>
+        </div>
 
         <button className="bg-[#daa520] text-white border-0 py-[6px] px-[4px] rounded-lg cursor-pointer w-[130px]">Kirim</button>
 
